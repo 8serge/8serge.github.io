@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Rain Drops — ровные круги</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #050b14; /* очень темный синий фон */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+            cursor: crosshair;
+        }
+
+        .rain-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            user-select: none;
+        }
+
+        pre {
+            font-size: 8px;
+            line-height: 1.0;
+            letter-spacing: 0;
+            color: #88ccff;
+            text-shadow: 0 0 4px #2a6fbb, 0 0 10px #1a4a7a;
+            white-space: pre;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="rain-container">
+        <pre id="rain-art"></pre>
+    </div>
+
+    <script>
+        (function() {
+            let WIDTH = 100;
+            let HEIGHT = 50;
+
+            const CHARS = ' .:-=+*#%@';
+
+            // Параметры анимации
+            const DROP_RATE = 0.04;
+            const RIPPLE_SPEED = 0.06;
+            const RING_WIDTH = 1.8;
+            const FADE_RATE = 0.0025;
+            const MAX_RIPPLES = 120;
+
+            let ripples = [];
+
+            // Глобальные коэффициенты соотношения сторон символа
+            let charAspect = 2.0; // по умолчанию, будет уточнено
+
+            function createRipple(x, y) {
+                if (ripples.length >= MAX_RIPPLES) return;
+                ripples.push({
+                    x: x,
+                    y: y,
+                    radius: 0,
+                    maxRadius: Math.sqrt(WIDTH * WIDTH + HEIGHT * HEIGHT) * 0.9,
+                    alpha: 1.0
+                });
+            }
+
+            function updateRipples() {
+                for (let i = ripples.length - 1; i >= 0; i--) {
+                    const r = ripples[i];
+                    r.radius += RIPPLE_SPEED;
+                    r.alpha -= FADE_RATE;
+                    if (r.alpha <= 0 || r.radius > r.maxRadius) {
+                        ripples.splice(i, 1);
+                    }
+                }
+                if (Math.random() < DROP_RATE) {
+                    const x = Math.random() * WIDTH;
+                    const y = Math.random() * HEIGHT;
+                    createRipple(x, y);
+                }
+            }
+
+            // Функция интенсивности с ТОЧНОЙ компенсацией соотношения сторон
+            function getIntensity(x, y) {
+                let intensity = 0;
+                // Используем реальное соотношение высоты символа к ширине
+                // Чтобы круги были круглыми, мы умножаем dy на charAspect.
+                // Но так как charAspect может быть ~2.0, это сильно сожмёт круг по вертикали.
+                // На самом деле, чтобы круг был круглым на экране, 
+                // расстояние в пикселях должно быть одинаковым: dx_px^2 + dy_px^2 = R_px^2.
+                // dx_px = dx * charWidth; dy_px = dy * charHeight.
+                // Чтобы упростить, мы можем хранить радиус в "пиксельных" единицах, 
+                // но проще: в getIntensity считать dist = sqrt(dx^2 + (dy * charAspect)^2).
+                // Это даст эллипс, если charAspect не равен 1, но так как мы хотим круг, 
+                // то это правильный подход: мы как бы "растягиваем" координату Y, 
+                // чтобы компенсировать вытянутость символов.
+                // Если charAspect = 2, то dy * 2, и круг будет круглым.
+                // Но! Мы должны также умножить и r.radius на тот же коэффициент? 
+                // Нет, r.radius — это расстояние в "символьных" единицах по X.
+                // Чтобы не путаться, давайте считать всё в пикселях.
+                // Но для простоты оставим как есть, но с динамическим charAspect.
+                
+                const aspectY = charAspect; 
+                for (const r of ripples) {
+                    const dx = x - r.x;
+                    const dy = (y - r.y) * aspectY; // компенсация вытянутости
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    
+                    // Радиус тоже должен быть в тех же единицах.
+                    // Если мы умножили dy на aspectY, то и радиус должен быть умножен?
+                    // Нет, потому что r.radius увеличивается линейно в символьных единицах.
+                    // Но чтобы круг был круглым, нужно, чтобы приращение радиуса 
+                    // в пикселях было одинаковым по X и Y.
+                    // У нас dx и dy уже в "пиксельных" единицах (dx_px = dx, dy_px = dy * aspectY).
+                    // Тогда dist — это расстояние в пикселях.
+                    // А r.radius — в символьных единицах. Их нельзя сравнивать напрямую.
+                    // Поэтому давайте хранить r.radius в пиксельных единицах (по X).
+                    // Но тогда скорость RIPPLE_SPEED должна быть в пикселях за кадр.
+                    // Для простоты просто умножим r.radius на 1.0 (по X), 
+                    // а для Y он уже учтён в dy.
+                    
+                    // На самом деле, чтобы не запутаться, сделаем так:
+                    // Будем хранить r.radius в символьных единицах по X.
+                    // Тогда расстояние dist должно быть в тех же единицах.
+                    // Если мы умножаем dy на aspectY, то dist получается в единицах X * aspectY? 
+                    // Нет, dx в единицах X, dy * aspectY тоже в единицах X (потому что aspectY = высота/ширина).
+                    // Тогда dist в единицах X. И r.radius в единицах X. Всё сходится!
+                    // Проверим: если точка на расстоянии dx = 0, dy = r.radius / aspectY, 
+                    // то dist = sqrt(0 + (r.radius/aspectY * aspectY)^2) = r.radius. 
+                    // Значит, круг будет круглым.
+                    
+                    const diff = Math.abs(dist - r.radius);
+                    if (diff < RING_WIDTH) {
+                        const ringVal = 1 - diff / RING_WIDTH;
+                        intensity += ringVal * r.alpha;
+                    }
+                }
+                return Math.min(1, intensity);
+            }
+
+            function render() {
+                const lines = [];
+                for (let y = 0; y < HEIGHT; y++) {
+                    let line = '';
+                    for (let x = 0; x < WIDTH; x++) {
+                        const intensity = getIntensity(x, y);
+                        const idx = Math.floor(intensity * (CHARS.length - 1));
+                        line += CHARS[Math.min(idx, CHARS.length - 1)];
+                    }
+                    lines.push(line);
+                }
+                document.getElementById('rain-art').textContent = lines.join('\n');
+            }
+
+            // ---------- Точная подстройка под экран ----------
+            function resizeCanvas() {
+                const pre = document.getElementById('rain-art');
+                const winWidth = window.innerWidth;
+                const winHeight = window.innerHeight;
+
+                const testSpan = document.createElement('span');
+                testSpan.style.fontFamily = "'Courier New', Courier, monospace";
+                testSpan.style.fontSize = '12px';
+                testSpan.style.position = 'absolute';
+                testSpan.style.visibility = 'hidden';
+                testSpan.style.whiteSpace = 'pre';
+                testSpan.textContent = 'M';
+                document.body.appendChild(testSpan);
+                const charWidthAt12 = testSpan.getBoundingClientRect().width;
+                const charHeightAt12 = testSpan.getBoundingClientRect().height;
+                document.body.removeChild(testSpan);
+
+                // Сохраняем реальное соотношение сторон символа
+                charAspect = charHeightAt12 / charWidthAt12;
+
+                const targetWidthChars = 220; 
+                WIDTH = targetWidthChars;
+
+                let fontSize = winWidth / (WIDTH * (charWidthAt12 / 12));
+                fontSize = Math.max(4, Math.min(16, fontSize));
+
+                const charHeight = fontSize * (charHeightAt12 / 12);
+                const maxRows = Math.floor(winHeight / charHeight);
+                HEIGHT = maxRows;
+
+                pre.style.fontSize = fontSize + 'px';
+                pre.style.lineHeight = charHeight + 'px';
+
+                ripples = [];
+                for (let i = 0; i < 5; i++) {
+                    createRipple(Math.random() * WIDTH, Math.random() * HEIGHT);
+                }
+            }
+
+            // ---------- Обработка клика ----------
+            function handleInteraction(e) {
+                let clientX, clientY;
+                if (e.touches) {
+                    clientX = e.touches[0].clientX;
+                    clientY = e.touches[0].clientY;
+                } else {
+                    clientX = e.clientX;
+                    clientY = e.clientY;
+                }
+
+                const pre = document.getElementById('rain-art');
+                const rect = pre.getBoundingClientRect();
+                const charWidth = rect.width / WIDTH;
+                const charHeight = rect.height / HEIGHT;
+
+                const gridX = (clientX - rect.left) / charWidth;
+                const gridY = (clientY - rect.top) / charHeight;
+
+                if (gridX >= 0 && gridX < WIDTH && gridY >= 0 && gridY < HEIGHT) {
+                    createRipple(gridX, gridY);
+                }
+                
+                if (e.touches) e.preventDefault();
+            }
+
+            function animate() {
+                updateRipples();
+                render();
+                requestAnimationFrame(animate);
+            }
+
+            window.addEventListener('load', () => {
+                resizeCanvas();
+                window.addEventListener('resize', resizeCanvas);
+                
+                const container = document.querySelector('.rain-container');
+                container.addEventListener('click', handleInteraction);
+                container.addEventListener('touchstart', handleInteraction, { passive: false });
+                
+                animate();
+            });
+        })();
+    </script>
+</body>
+</html>
