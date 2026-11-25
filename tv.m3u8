@@ -788,14 +788,16 @@ http://dmi3y-tv.online/hls/CH_KAPITAN_FANTASTIKA.m3u8
 http://dmi3y-tv.online/hls/CH_RYZHIY.m3u8
 #EXTINF:-1 group-title="Детские",Tiji
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
-http://dmi3y-tv.online/hls/CH_TIJI.m3u8
+https://flussonic.mkpnet.ru/tv-3848dd8604a262e0/video.m3u8
+#http://dmi3y-tv.online/hls/CH_TIJI.m3u8
 #EXTINF:-1 group-title="Детские",Gulli GIRL
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
-http://dmi3y-tv.online/hls/CH_GULLI_GIRL.m3u8
+https://flussonic.mkpnet.ru/tv-d66fcf59f2f4c966/video.m3u8
+#http://dmi3y-tv.online/hls/CH_GULLI_GIRL.m3u8
 #EXTINF:-1 group-title="Детские",Мамонтенок ТВ
 https://venera.movify.tv/MamontRu/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Детские",Мама
-http://flussonic.linkintel.ru/mama/index.m3u8
+http://195.64.140.147:10127/127
 #EXTINF:-1 group-title="Детские",Пингвин
 https://venera.movify.tv/PingvinRu/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Детские",О!
