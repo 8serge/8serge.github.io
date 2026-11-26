@@ -841,7 +841,7 @@ http://timeshift.arpinet.am/171/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Nicktoons" group-title="Детские",Nicktoons
 
 #EXTINF:-1 tvg-name="Nick Jr." group-title="Детские",Nick Jr.
-
+https://stream2.cinerama.uz/1501/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Мультиландия" group-title="Детские",Мультиландия
 http://195.64.140.147:10135/135
 #EXTINF:-1 tvg-name="Советские мультфильмы" group-title="Детские",Советские мультфильмы
@@ -1033,9 +1033,8 @@ http://stitch.teletarget.ru/vintera/terra/index.m3u8
 #http://178.124.153.123:44400/terra
 #EXTINF:-1 group-title="Развлечения",Тайна ТВ
 https://bl.rutube.ru/livestream/a11c890a0ec0730ad33bdaaf2d244e1a/index.m3u8?s=2EqBC0Fmi6AFe1SfsrjO7w&e=2093171276&scheme=https
-
 #EXTINF:-1 tvg-name="Тайны Галактики" group-title="Развлечения",Тайны Галактики
-
+https://s7.merlive.am/tainigalaktiki/index.m3u8
 #EXTINF:-1 tvg-name="Nauchpop HD" group-title="Развлечения",VHS-ка Научпоп HD
 https://sgw.ottgoods.ru/streamingGateway/GetLivePlayList?source=Nauchpop_HD.m3u8&serviceArea=MSK-SA-1&drmreq=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfdHlwZSI6ImFwdHBfb3R0IiwiY2xhc3MiOiJCUk9XU0VSIiwiZHJlaWQiOiI0MTA0MDkwMTY3MjIyOCIsImV4cCI6MTc5NjMwNDAzMiwiaHdpZCI6ImViMDIwMWNjNTM1MzE0ZWU2YmNhNmFmODQ2YzQwNmYzYjBlMDU5NjA3NmM4MDFlOWIxNzQwZmNiYmU5ODcyYmIiLCJsYXN0X3JlcV9kYXRlIjoxNzk1Njk5MjMyLCJzZXNzaW9uX2lkIjoiMDE1ODY1NjAxMDQ3YjU3ZGNhMWEyNmM4YzZkMjk0NDQiLCJ0b2tlbl90eXBlIjoiQ29udGVudEFjY2Vzc1Rva2VuIiwidHlwZSI6Ik1PWklMTEEifQ.iLoQtaIAu7ddrbWqkVUUkuuwH8ZT8EhB6yuP_-2dmX8
 #EXTINF:-1 tvg-name="OCEAN TV" group-title="Развлечения",Океан HD
@@ -1166,7 +1165,8 @@ https://fs.uplink.kz/telekanal_khl/mono.m3u8?token=onlinetv2
 #http://176.118.197.101/KHL/index.m3u8
 
 #EXTINF:-1 group-title="Спорт",Setanta Sports 1
-http://dmi3y-tv.online/hls/CH_SETANTA_SPORTS1HD.m3u8
+https://stream2.cinerama.uz/1263/tracks-v1a1/mono.m3u8
+#http://dmi3y-tv.online/hls/CH_SETANTA_SPORTS1HD.m3u8
 #EXTINF:-1 group-title="Спорт",Setanta Sports 2
 http://85.117.61.84/setanta2/index.m3u8
 #http://dmi3y-tv.online/hls/CH_SETANTA_SPORTS2HD.m3u8
