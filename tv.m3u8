@@ -727,6 +727,18 @@ https://bl.rutube.ru/livestream/54de765aeea96a73d23a24b4e2cab07d/index.m3u8?s=7Z
 https://bl.rutube.ru/livestream/680dfe110840cf882437082b948578d6/index.m3u8?s=Nj6DVhChKCo3AEX0JcbkwA&e=2093771578&scheme=https
 #EXTINF:-1 group-title="Кинозалы",ЛУЧШИЕ КОМЕДИЙНЫЕ ФИЛЬМЫ
 https://bl.rutube.ru/livestream/7758ac4d77fac95e187144ee2c8b368d/index.m3u8?s=KM2fQP3KDyxO_2oIDH4XTA&e=2093771628&scheme=https
+#EXTINF:-1 group-title="Кинозалы",ЛУЧШИЕ ТРИЛЛЕРЫ
+https://bl.rutube.ru/livestream/f7c1387e288223779b2b53937843233a/index.m3u8?s=vF-hfYiurloCTFSNpBev0g&e=2095677178&scheme=https
+#EXTINF:-1 group-title="Кинозалы",ЛУЧШИЕ УЖАСЫ И ХОРРОРЫ
+https://bl.rutube.ru/livestream/1e74326173960505fb60f107e132fe6f/index.m3u8?s=YmbclSdP16zbSU799pbh1w&e=2095677246&scheme=https
+#EXTINF:-1 group-title="Кинозалы",ЛУЧШИЕ ПРИКЛЮЧЕНЧЕСКИЕ ФИЛЬМЫ
+https://bl.rutube.ru/livestream/202d41c36b5ed9245216f5288be3a235/index.m3u8?s=ukwPNJNrT2CS8K5XsMYbOQ&e=2095677315&scheme=https
+#EXTINF:-1 group-title="Кинозалы",ЛУЧШИЕ МЕЛОДРАМЫ
+https://bl.rutube.ru/livestream/73cbe695b3c624629c2ff056e38ead75/index.m3u8?s=oWbCpY-CbRDhoZTEEKf3zw&e=2095677371&scheme=https
+#EXTINF:-1 group-title="Кинозалы",ЛУЧШИЕ КРИМИНАЛЬНЫЕ ФИЛЬМЫ
+https://bl.rutube.ru/livestream/87d8eb5aac1c9edae08717331f2adf3a/index.m3u8?s=_0mVjvVYyFVTdFk_7HRzow&e=2095677413&scheme=https
+#EXTINF:-1 group-title="Кинозалы",ЛУЧШИЕ ФЭНТЕЗИ ФИЛЬМЫ
+https://bl.rutube.ru/livestream/40fce8bc38735c864c0369228a72e59b/index.m3u8?s=Q84RpAsbyDvZI7FPkj4XCA&e=2095677448&scheme=https
 #EXTINF:-1 group-title="Кинозалы",Фильмач Кино и сериалы
 https://bl.rutube.ru/livestream/300560a65014ec501a25b1f79df9ad90/index.m3u8?s=yzsXv6mbDFZo7pYUSBQT2w&e=2092678679&scheme=https
 #EXTINF:-1 group-title="Кинозалы",EPIC MEDIA
@@ -881,6 +893,8 @@ https://bl.rutube.ru/livestream/ed497bdb28846536f3928849f8f7e469/index.m3u8?s=a0
 https://bl.rutube.ru/livestream/ec5267347fa50d03edba227906eba679/index.m3u8?s=-KRkb9w-BUC8NbtjAjj_Qw&e=2092679123&scheme=https
 #EXTINF:-1 group-title="Детские",Анимач
 https://bl.rutube.ru/livestream/b3019a8983105f5e33f038246f860c32/index.m3u8?s=LNuGdGdX7JEw_tnHfgKB1A&e=2093196602&scheme=https
+#EXTINF:-1 group-title="Детские",РЕТРО АНИМЕ
+https://bl.rutube.ru/livestream/5cc3ad508ccf825b275c2815ba05d2f7/index.m3u8?s=cXsm37XZrQfO-5tirEfuPA&e=2095677539&scheme=https
 #EXTINF:-1 group-title="Детские",Cartoons VHS
 http://kinowalk.hopto.org/myvhs_live
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI1IkfsHpSIw_uF89e4yDVWiOtYDqbpc4Fgw&s" group-title="Детские",Cartoon Head TV 1
@@ -1051,6 +1065,8 @@ http://185.46.16.239:8000/Drayv
 https://bl.rutube.ru/livestream/2d7fa51716500fba52586d594201777f/index.m3u8?s=CWnRPnrACD5NsnvtIsP20A&e=2093170410&scheme=https
 #EXTINF:-1 group-title="Развлечения",ВДОХ
 https://bl.rutube.ru/livestream/988ec7330fa38c8a1e5980ba7d02dbbe/index.m3u8?s=5dKZnO4qJvj7_7ox3vybSw&e=2093171230&scheme=https
+#EXTINF:-1 group-title="Развлечения",Документалки и познавательные шоу
+https://bl.rutube.ru/livestream/eddcc86d1dee0b5def546ea388eb38ea/index.m3u8?s=2QGvmmo_CTp2u4P7IR9sww&e=2095677857&scheme=https
 #EXTINF:-1 group-title="Развлечения",SUN
 http://timeshift.arpinet.am/232/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Развлечения" tvg-name="Home 4K" tvg-logo="https://i.imgur.com/3UXk7JR.png" tvg-country="RU" tvg-language="rus" nexus-score="100",Home 4K
