@@ -79,8 +79,14 @@ https://dwamdstream110.akamaized.net/hls/live/2017971/dwstream110/index.m3u8
 https://bl.rutube.ru/livestream/d14fcf59cb7d07a26c48ebc8c6565f44/index.m3u8?s=v9538LQrJK0GAqtHVgBbqw&e=2066519838&scheme=https
 #EXTINF:-1 group-title="Информационные",Euronews
 http://195.64.140.147:10183/183
-#EXTINF:-1 group-title="Информационные",ЛенТВ 24
-https://bl.rutube.ru/livestream/dd022de9cc6c8af89409513fa0a6117a/index.m3u8?s=YHqOn_rzznQfZzR8qjcSvQ&e=2094222715&scheme=https
+#EXTINF:-1 group-title="Информационные",France 24
+http://85.117.37.43/france24/index.m3u8
+#EXTINF:-1 group-title="Информационные",BBC
+http://85.117.61.84/bbc/index.m3u8
+#EXTINF:1,group-title="Информационные",CNN
+http://85.117.37.43/cnn/index.m3u8
+#EXTINF:1,group-title="Информационные",DW
+http://85.117.37.43/dw/index.m3u8
 
 #EXTINF:-1 group-title="Общественные",Россия К
 #EXTVLCOPT:http-user-agent=WINK/1.40.1 (AndroidTV/9) HlsWinkPlayer
@@ -1217,6 +1223,8 @@ https://bl.rutube.ru/livestream/f712ae5ff3db23ec09b3674133d44daa/index.m3u8?s=cb
 #EXTINF:-1 group-title="Музыка",Live Music Channel
 http://46.53.200.153:7777/play/Live_music_channel/index.m3u8
 
+#EXTINF:-1 group-title="Региональные",ЛенТВ 24
+https://bl.rutube.ru/livestream/dd022de9cc6c8af89409513fa0a6117a/index.m3u8?s=YHqOn_rzznQfZzR8qjcSvQ&e=2094222715&scheme=https
 #EXTINF:-1 group-title="Региональные",Ариг Ус 24
 https://bl.rutube.ru/livestream/5d9273a93631b87a3bbdc883bb3a58cb/index.m3u8?s=a23cgBHffU_ZYsMyjnZoxQ&e=2094223414&scheme=https
 #EXTINF:-1 group-title="Региональные",Первый крымский
