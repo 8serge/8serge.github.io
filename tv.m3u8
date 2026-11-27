@@ -248,7 +248,7 @@ https://sgw.ottgoods.ru/streamingGateway/GetLivePlayList?source=Den_Pobedy.m3u8&
 #EXTINF:-1 group-title="Кино",Дом кино
 http://176.118.197.101/Dom_kino/index.m3u8
 #EXTINF:-1 group-title="Кино",Дом Кино Премиум HD
-http://dmi3y-tv.online/hls/CH_DOMKINOPREMIUM.m3u8
+https://fs.uplink.kz/dom_kino_premium/mono.m3u8?token=onlinetv2
 #EXTINF:-1 group-title="Кино",Мосфильм. Золотая коллекция
 http://85.117.61.84/mosfilm/index.m3u8
 #http://185.121.1.163:8083/Mosfilm/index.m3u8
@@ -376,7 +376,8 @@ http://176.118.197.101/KinoTvHD/playlist.m3u8
 http://176.118.197.101/Cinema/index.m3u8
 #EXTINF:-1 group-title="Кино",HOLLYWOOD
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
-http://dmi3y-tv.online/hls/CH_HOLLYWOOD.m3u8
+https://stream2.cinerama.uz/1443/tracks-v1a1/mono.m3u8
+#http://dmi3y-tv.online/hls/CH_HOLLYWOOD.m3u8
 #EXTINF:-1 group-title="Кино",Bollywood HD
 http://176.118.197.101/Bollywood_HD/index.m3u8
 #EXTINF:-1 group-title="Кино",TV-21M
@@ -796,13 +797,16 @@ http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_7/variant.m3u8
 https://live.jtx-online.ru/memfs/e30ea533-4abf-4a88-91bc-73744ecfd06f.m3u8
 #EXTINF:-1 group-title="Детские",В гостях у сказки HD
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
-http://dmi3y-tv.online/hls/CH_VGOSTYAHUSKAZKIHD.m3u8
+https://fs.uplink.kz/v_gostyah_u_skazki/mono.m3u8?token=onlinetv2
+#http://dmi3y-tv.online/hls/CH_VGOSTYAHUSKAZKIHD.m3u8
 #EXTINF:-1 group-title="Детские",КАПИТАН ФАНТАСТИКА
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
-http://dmi3y-tv.online/hls/CH_KAPITAN_FANTASTIKA.m3u8
+https://stream2.cinerama.uz/1406/tracks-v1a1/mono.m3u8
+#http://dmi3y-tv.online/hls/CH_KAPITAN_FANTASTIKA.m3u8
 #EXTINF:-1 group-title="Детские",Рыжий
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
-http://dmi3y-tv.online/hls/CH_RYZHIY.m3u8
+https://stream2.cinerama.uz/1407/tracks-v1a1/mono.m3u8
+#http://dmi3y-tv.online/hls/CH_RYZHIY.m3u8
 #EXTINF:-1 group-title="Детские",Tiji
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
 https://flussonic.mkpnet.ru/tv-3848dd8604a262e0/video.m3u8
@@ -1025,9 +1029,10 @@ https://flussonic.mkpnet.ru/tv-d5d21f78cdf69c47/video.m3u8
 https://flussonic.mkpnet.ru/tv-a651b413f5cb4c44/video.m3u8
 #EXTINF:-1 group-title="Развлечения",Моя Планета
 https://flussonic.mkpnet.ru/tv-6febc5aecf84848d/video.m3u8
-#EXTINF:-1 group-title="Развлечения",Zoo ПАРК
+#EXTINF:-1 group-title="Развлечения",Зоопарк
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
-http://dmi3y-tv.online/hls/CH_3OOPARK.m3u8
+http://178.134.1.158:8081/zoopark/index.m3u8
+#http://s7.merlive.am/zoopark/index.m3u8
 #EXTINF:-1 group-title="Развлечения",Терра Инкогнита HD
 http://stitch.teletarget.ru/vintera/terra/index.m3u8
 #http://178.124.153.123:44400/terra
@@ -1054,7 +1059,8 @@ http://185.23.80.23:8080/NANO_HD/index.m3u8
 http://stitch.teletarget.ru/vintera/hochuvseznat/index.m3u8
 #EXTINF:-1 group-title="Развлечения",Инсайт ТВ UHD
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
-http://dmi3y-tv.online/hls/CH_INSAYT_TVHD.m3u8
+https://stream2.cinerama.uz/1416/tracks-v1a1/mono.m3u8
+#http://dmi3y-tv.online/hls/CH_INSAYT_TVHD.m3u8
 #EXTINF:-1 group-title="Развлечения",Приключения HD
 https://stream2.cinerama.uz/1420/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Развлечения",RTG
