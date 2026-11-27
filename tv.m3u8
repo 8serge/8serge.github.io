@@ -971,7 +971,7 @@ http://s7.merlive.am/ktokuda/index.m3u8
 #EXTINF:-1 tvg-name="MyStihiya" group-title="Развлечения",Моя стихия
 https://sgw.ottgoods.ru/streamingGateway/GetLivePlayList?source=MyStihiya.m3u8&serviceArea=MSK-SA-1&drmreq=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfdHlwZSI6ImFwdHBfb3R0IiwiY2xhc3MiOiJCUk9XU0VSIiwiZHJlaWQiOiI0MTA0MDkwMTY3MjIyOCIsImV4cCI6MTc5NjMwNDAzMiwiaHdpZCI6ImViMDIwMWNjNTM1MzE0ZWU2YmNhNmFmODQ2YzQwNmYzYjBlMDU5NjA3NmM4MDFlOWIxNzQwZmNiYmU5ODcyYmIiLCJsYXN0X3JlcV9kYXRlIjoxNzk1Njk5MjMyLCJzZXNzaW9uX2lkIjoiMDE1ODY1NjAxMDQ3YjU3ZGNhMWEyNmM4YzZkMjk0NDQiLCJ0b2tlbl90eXBlIjoiQ29udGVudEFjY2Vzc1Rva2VuIiwidHlwZSI6Ik1PWklMTEEifQ.iLoQtaIAu7ddrbWqkVUUkuuwH8ZT8EhB6yuP_-2dmX8
 #EXTINF:-1 group-title="Развлечения",В мире животных
-http://dmitry-tv.ddns.net/hls/CH_VMIREZHIVOTNYH_HD720.m3u8
+https://stream2.cinerama.uz/1404/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Развлечения",Аква ТВ
 http://stitch.teletarget.ru/vintera/aquatv/index.m3u8
 #EXTINF:-1 group-title="Развлечения",Love Nature 4K
@@ -1048,7 +1048,7 @@ http://195.64.140.147:10166/166
 http://195.64.140.147:10156/156
 #EXTINF:-1 group-title="Развлечения",Наука 2.0
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
-http://dmi3y-tv.online/hls/CH_NAUKA20.m3u8
+http://vod.tuva.ru/nauka2/index.m3u8
 #EXTINF:-1 group-title="Развлечения",Nano HD
 http://185.23.80.23:8080/NANO_HD/index.m3u8
 #EXTINF:-1 group-title="Развлечения" tvg-logo="https://iptvx.one/picons/xo4u-vsio-znat.png",Хочу Всё Знать HD
@@ -1146,6 +1146,7 @@ http://31.210.208.171:8080/start/index.m3u8?token=+W2MSER
 #EXTINF:-1 group-title="Спорт",Старт Триумф
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
 http://dmi3y-tv.online/hls/CH_START_TRIUMFHD720.m3u8
+#http://88.218.242.237:8001/Start_Triumf_HD
 #EXTINF:-1 group-title="Спорт",ТВ Спорт
 http://live-3.otcnet.ru/sportivny/index.m3u8
 #EXTINF:-1 tvg-name="Channel LIVE1" group-title="Спорт",БУМ
