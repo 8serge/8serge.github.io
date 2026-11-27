@@ -83,9 +83,9 @@ http://195.64.140.147:10183/183
 http://85.117.37.43/france24/index.m3u8
 #EXTINF:-1 group-title="Информационные",BBC
 http://85.117.61.84/bbc/index.m3u8
-#EXTINF:1,group-title="Информационные",CNN
+#EXTINF:1 group-title="Информационные",CNN
 http://85.117.37.43/cnn/index.m3u8
-#EXTINF:1,group-title="Информационные",DW
+#EXTINF:1 group-title="Информационные",DW
 http://85.117.37.43/dw/index.m3u8
 
 #EXTINF:-1 group-title="Общественные",Россия К
