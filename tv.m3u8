@@ -628,8 +628,6 @@ http://kinowalk.hopto.org/dak3767_live
 https://assimilator.tv/uploads/DreakingDad.m3u8
 #EXTINF:-1 group-title="Кинозалы",TV12 GUDAUTA
 http://185.221.213.254:8080/Mafia2/index.m3u8
-#EXTINF:-1 group-title="Кинозалы",TVON ACTION
-http://188.208.197.173:2580/tvonfilm/video.m3u8?token=or1g1nall
 #EXTINF:-1 group-title="Кинозалы",У КРАЯ БЕЗДНЫ
 http://kinowalk.hopto.org/ddator_live
 #EXTINF:-1 group-title="Кинозалы",Киноман HD
@@ -773,8 +771,6 @@ https://bl.rutube.ru/livestream/f6a3656e5ef574982994ddf2e5003341/index.m3u8?s=-1
 
 #EXTINF:-1 group-title="Детские",ВСЕЛЕННАЯ РИКА И МОРТИ
 https://bl.rutube.ru/livestream/478a825bfd784e1e9de08ceceb3d2121/index.m3u8?s=iK2ULUGinPuNZWKOU7gSLw&e=2092679910&scheme=https
-#EXTINF:-1 group-title="Детские",TVON KIDS
-http://188.208.197.173:2580/tvonkids/video.m3u8?token=or1g1nall
 #EXTINF:-1 group-title="Детские",Disney Channel
 https://kinowalk.hopto.org/kanaldisneyonline_live
 #EXTINF:-1 group-title="Детские",FoxKids-Remastered
