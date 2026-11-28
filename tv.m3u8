@@ -1109,6 +1109,8 @@ https://fs.uplink.kz/big_planet/mono.m3u8?token=onlinetv2
 https://fs.uplink.kz/tochka_otriva/mono.m3u8?token=onlinetv2
 #EXTINF:-1 group-title="Развлечения",Здоровое ТВ
 https://stream2.cinerama.uz/1428/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://iptvx.one/picons/englishclub.png" group-title="Развлечения",English Club TV
+https://dash2.antik.sk/live/test_ectv_hd_1200/playlist.m3u8
 
 #EXTINF:-1 group-title="Спорт",Матч HD
 https://bl.rutube.ru/livestream/11bbbec75a2ceb8cf446ad16813c6eec/index.m3u8?s=0TE_j0StNrZ8H2XrqyCxHA&e=2092679412&scheme=https
